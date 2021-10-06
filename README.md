@@ -66,10 +66,66 @@
 </div>
 
 ## 💡 Description
-As someone who is willing to practice creating e-commerce websites, It is a struggle to find some Real and High Quality Data as a placeholder while on development stage. 
+As someone who is willing to practice creating e-commerce websites, It is a struggle to find some Real and High Quality Data as a placeholder while on development stage. So this API's job is to help Developer's to reach out to this data that can help them and make it easier .
 
 ## ⚠️ Disclaimer  
 Users who will Use this Data should only use it for Practice and <strong>not for Commercial Purposes !</strong>
+
+<h3> User Features </h3>
+<hr>
+<ul>
+<li>name : represents the User's name <strong>Required </strong></li>
+<li>email : represents the User's email <strong>Required</strong></li>
+<li>phone : represents the User's phone <strong>Required</strong></li>
+<li>country : represents the User's country <strong>Required</strong></li>
+<li>api_key : represents the User's Api Key which is the key that give's access to the User to use the WareHouse API <strong>Required</strong></li>
+<li>status : represents the User's status either Company or User <strong>Required</strong></li>
+<ul>
+<li> <em><strong>Company</strong></em></li>
+
+<ul>
+<li>service : represents the Company's service <strong>Required</strong></li>
+<li>company_url : represents the Company's url <strong>Required</strong></li>
+</ul>
+</ul>
+<ul>
+<li> <em><strong>User</strong></em></li>
+<ul>
+<li>birth_date : represents the User's birth date <strong>Required</strong></li>
+<li>gender : represents the User's gender <strong>Required</strong></li>
+</ul>
+</ul>
+
+<li>since : represents when did the user signed up for the WareHouse API auto <strong>Not-Required</strong></li>
+
+</ul>
+
+
+<h3> Product Features </h3>
+<hr>
+<ul>
+<li>product_name : represents the Product's name <strong>Required</strong></li>
+<li>category : represents Category of the product <strong>Required</strong></li>
+<li>sub_category : represents Sub-category of the product <strong>Not-Required</strong>as not every Company has that feature</li>
+<li>brand : represents the Product's Brand    <strong>Required</strong></li>
+<li>price : represents the Product's  Price    <strong>Required</strong></li>
+<li>img_url : represents the Product's img_url  <strong>Required</strong></li>
+<li>category : represents the if the Product is in the WareHouse or out of Stock<strong>Required</strong></li>
+<li>delivery : represents the if Product have Delivery option    <strong>Required</strong></li>
+<li>product_description : represents the Product's description  <strong>Required</strong></li>
+<li>currency : represents the Product's price currency <strong>Required</strong></li>
+
+<li>product_url : represents the Product's original page url <strong>Required</strong></li>
+<li>source_name : represents the Product's price currency <strong>Required</strong></li>
+<li>rating : represents the Product's rating <strong>Required</strong></li>
+<li>release_date : represents when did the Product is Uploaded to the API   <strong>Required</strong></li>
+<li>product_id : represents the Product's id which is hashed unique for every product for the owner can share to user who doesnt own it so he can view and edit it. <strong>Required</strong></li>
+</ul>
+
+
+<h3>JSON</h3>
+
+
 
 
 ## 💻️ Languages & Concepts Used
