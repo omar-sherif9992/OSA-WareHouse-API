@@ -40,7 +40,8 @@
 [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 
-# OSA-WareHouse-API
+<h1 align="center">OSA-WareHouse-API</h1>
+
 
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
@@ -63,10 +64,14 @@
   </p>
 </div>
 
+## 💡 Description
+As someone who is willing to practice creating e-commerce websites, It is a struggle to find some Real and High Quality Data as a placeholder while on development stage. 
+
+## ⚠️ Disclaimer  
+Users who will Use this Data should only use it for Practice and not for Commercial Purposes !
 
 
-
-# Technologies Used
+## 💻️ Languages & Concepts Used
 
 * Python [(Java Swing)](https://en.wikipedia.org/wiki/Python_(programming_language))
 * [Object-oriented programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming#:~:text=Object%2Doriented%20programming%20(OOP),(often%20known%20as%20methods)) (Encapsulation, Abstraction, Inheritance, and Polymorphism)
@@ -92,7 +97,7 @@
 
 
 
-## Author: <i>Omar Sherif Ali</i>
+## Author: <i>Omar Sherif Ali - OSA</i>
 
 <h2> Connect with me <img src='https://raw.githubusercontent.com/ShahriarShafin/ShahriarShafin/main/Assets/handshake.gif' width="100px"> </h2>
 <a href="https://github.com/omar-sherif9992">
@@ -106,3 +111,4 @@
 	<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
 </a>
 
+Made with ❤️ by Omar Sherif Ali - OSA.
