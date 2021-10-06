@@ -88,7 +88,7 @@ Users who will Use this Data should only use it for Practice and not for Commerc
 # FrameWork
 * [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework))
 
-# Libraries Used
+## Libraries Used
 
 
 
@@ -111,4 +111,6 @@ Users who will Use this Data should only use it for Practice and not for Commerc
 	<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
 </a>
 
-Made with ❤️ by Omar Sherif Ali - OSA.
+
+
+<p  align="center">Made with ❤️ by Omar Sherif Ali - OSA.</p>
