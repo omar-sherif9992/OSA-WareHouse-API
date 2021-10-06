@@ -171,3 +171,5 @@ Users who will Use this Data should only use it for Practice and <strong>not for
 
 
 <p  align="center">Made with ❤️ by Omar Sherif Ali - OSA.</p>
+<p  align="center">© OSA - 2021</p>
+
