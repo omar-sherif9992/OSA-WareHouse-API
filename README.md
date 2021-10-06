@@ -21,7 +21,7 @@
 
 </div>
 <h1 align="center">Hi <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px">, I am Omar Sherif Ali </h1>
-<h3 align="center">Computer Science Engineer | Web & API Developer </h3>
+<h3 align="center">Computer Science Engineer | FullStack Web & API Developer </h3>
 
 <br>
 
@@ -49,17 +49,17 @@
     <img src="./SVGs/warehouse-icon.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">E-commerce API</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An E-commerce API to aid Developers for their E-commerce practice projects!
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/othneildrew/Best-README-Template">View The WareHouse API</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="mailto:osa.helpme@gmail.com?subject=UnExpected%20Error%20Occured&body=Sorry%20for%20the%20inconvenience%2C%20Please%20describe%20Your%20situation%20and%20emphasis%20the%20Endpoint%20!%0A">Report Bug</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
@@ -69,7 +69,7 @@
 As someone who is willing to practice creating e-commerce websites, It is a struggle to find some Real and High Quality Data as a placeholder while on development stage. 
 
 ## ⚠️ Disclaimer  
-Users who will Use this Data should only use it for Practice and not for Commercial Purposes !
+Users who will Use this Data should only use it for Practice and <strong>not for Commercial Purposes !</strong>
 
 
 ## 💻️ Languages & Concepts Used
