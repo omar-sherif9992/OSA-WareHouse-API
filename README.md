@@ -1,7 +1,8 @@
 <div id="top"></div>
 
 <!-- badges -->
-
+<div align="center" >
+	
 [![forthebadge made-with-python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://www.javascript.com)
 [![PostreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://GitHub.com/Naereen/badges/)
@@ -18,7 +19,7 @@
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 
-
+</div>
 <h1 align="center">Hi <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px">, I am Omar Sherif Ali </h1>
 <h3 align="center">Computer Science Engineer | Web & API Developer </h3>
 
@@ -40,7 +41,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 
-<h1 align="center">OSA-WareHouse-API</h1>
+<h1 align="center">Welcome to OSA-WareHouse-API</h1>
 
 
 <div align="center">
