@@ -71,6 +71,14 @@
 * Python [(Java Swing)](https://en.wikipedia.org/wiki/Python_(programming_language))
 * [Object-oriented programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming#:~:text=Object%2Doriented%20programming%20(OOP),(often%20known%20as%20methods)) (Encapsulation, Abstraction, Inheritance, and Polymorphism)
 * [Exception Handling](https://en.wikipedia.org/wiki/Exception_handling)
+* [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+* Databases: SQLite using [SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/) (locally) and [PostgreSQL](https://www.heroku.com/postgres) (externally)
+* HTML
+* CSS
+* Javascript
+* [Bootstrap](https://getbootstrap.com/)
+* [Jinja2](https://jinja.palletsprojects.com/en/3.0.x/) (For templating)
+* [Heroku](https://www.heroku.com/) (Website Deployment)
 
 # FrameWork
 * [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework))
@@ -80,6 +88,7 @@
 
 
 ## Video Demo
+
 
 
 
