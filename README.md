@@ -71,6 +71,10 @@ As someone who is willing to practice creating e-commerce websites, It is a stru
 ## ⚠️ Disclaimer  
 Users who will Use this Data should only use it for Practice and <strong>not for Commercial Purposes !</strong>
 
+
+<a href="https://www.getpostman.com/"><img src="https://assets.getpostman.com/common-share/postman-logo-horizontal-320x132.png" /></a><br />
+
+
 <h3> User Features </h3>
 <hr>
 <ul>
