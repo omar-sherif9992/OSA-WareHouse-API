@@ -155,9 +155,12 @@ class Products(db.Model):
         owner = {'name': user.name,
                  'email': user.email,
                  'phone': user.phone,
+                 "country":user.country,
                  "status": user.status,
+
                  "number_of_products": user.number_of_products,
                  "since": user.since_date,
+
                  }
         if user.status == "User":
             owner["gender"] = user.gender

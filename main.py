@@ -1,10 +1,8 @@
 import csv
-
 import pyshorteners
 import sqlalchemy
 from flask import url_for, flash, send_from_directory
 from werkzeug.utils import secure_filename
-
 from Notification import email_manager
 from forms import RegisterForm, GoogleForm, ForgotForm
 from config import *
@@ -113,7 +111,6 @@ def sign_up(email, name, form):
         if COMPANY_END.lower() in name.lower():
             name = name.lower().replace(COMPANY_END.lower(), "")
             name = name.title()
-            print(name)
 
         # Because a User doesn't have a service nor a company url
     elif status == "User":
@@ -157,7 +154,6 @@ def sign_up(email, name, form):
     inventory_link = url_for('get_my_products', api_key=user_api_key, _external=True)
     # generates a QR-Code that directs the user  to his or her inventory to view their products
     generate_qrcode(url=inventory_link)
-    print("User is added")
     # An Email is sent with their api_key and qrcode
     Mail.send_email(subject="Warehouse API Key", html_file_path='./Notification/Email-Verification-Gmail-template.html',
                     first_name=name, last_name="", contacts=[MY_SUPPORT_EMAIL, email], message=message,
@@ -1047,7 +1043,6 @@ def report_product():
                         html_file_path='./Notification/Email-Verification-Gmail-template.html',
                         first_name=reporter_user.name, last_name="", contacts=[MY_SUPPORT_EMAIL, reporter_user.email],
                         message=message)
-        print(request.endpoint)
         return jsonify(response={
             "success_message": f"Successfully Reported {product_name}",
             "problem_description": problem_description}, status="success")
@@ -1083,7 +1078,6 @@ def send_emails_to_all_users():
         abort(500)
 
 
-# todo recheck
 @app.route('/forgot/api_key', methods=['GET', "POST"])
 def forgot_api_key():
     """it sends a link to the user by email so he can see his new api_key """
@@ -1099,7 +1093,7 @@ def forgot_api_key():
 
             token = serializer.dumps(email, salt='change-api-key')
             link = url_for('found_api_key', token=token, id=user.id, _external=True)
-            shorted_link = shortner.tinyurl.short(link)  # todo shortened the link
+            shorted_link = shortner.tinyurl.short(link)  #  shortened the link because it was lengthy
             message = f"Please open this link to get a new API Key:\n {shorted_link} "
             Mail.send_email(subject="Warehouse API Key",
                             html_file_path='./Notification/Email-Verification-Gmail-template.html',
@@ -1152,7 +1146,6 @@ def download_profile():
         user = [user.to_dict_save()]
         if len(user) == 0 or user == [None]:
             return jsonify(response={"fail_message": f"You don't have any Product"}, status="fail")
-        print(user)
         profile = Profile(my_profile=user)
         # it prepares the csv file containing all_products structured by panda and save it in the static folder
         profile.prepare_data()
@@ -1263,7 +1256,6 @@ def download_file(name, api_key):
             fail_response = content.get('response').get('fail_message')
             if fail_response != None and (
                     "Invalid Api Key please apply for an API Key" in fail_response or "Api Key is needed for access" in fail_response):
-                print(content.get('response').get('fail_message'))
                 return jsonify(response={'fail_message': "💡 Api Key is needed for access"}, status="fail")
 
             if status != None and status == 'error':
@@ -1271,7 +1263,6 @@ def download_file(name, api_key):
                 break
 
             if status != None and status == 'fail':
-                print("Product is not added due to " + fail_response + "❌")
                 fall_backs.append(f"❌ {product_name} is not added due to {response.json()['response']['fail_message']}")
                 counter -= 1
                 continue
@@ -1327,6 +1318,11 @@ def upload_file():
     except:
         abort(500)
 
+@app.route('/documentation')
+@app.route('/docs')
+def documentation():
+    """The WareHouse API Documentation"""
+    return redirect("https://documenter.getpostman.com/view/17286684/UUy65PqF")
 
 @app.route('/Privacy&Policy')
 def Privacy_Policy():

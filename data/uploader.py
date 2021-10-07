@@ -79,7 +79,7 @@ class Uploader:
                 print(f"{self.user.name} failed to register ! ")
 
         else:
-            self.api_key = self.check_api_key(self.read_api_key(user_name=self.company.name))  # todo
+            self.api_key = self.check_api_key(self.read_api_key(user_name=self.company.name))
             if self.api_key != None:
                 print(f"{self.company.name} was registered before")
 

@@ -1,6 +1,9 @@
 import calendar
 import random
+import time
+
 import requests, datetime
+from datetime import datetime
 import os
 import string
 from datetime import datetime
@@ -23,14 +26,17 @@ ALLOWED_EXTENSIONS = {'csv', 'ods', 'xlsx'}
 
 def check_date(birth_date):
     """If false it has a validation message with it"""
+
     if birth_date != None:
         birth_date = birth_date.strip()
         if birth_date == '':
             return (False, "Please Enter Your Birth Date")
         try:
-            birth_date = datetime.datetime.strptime(birth_date, "%m/%d/%Y").date()  # ==> yyyy-mm -dd
-            birth_date_year = int((str(birth_date)).split("-")[0])
-            current_year = int(datetime.datetime.now().year)
+            time.strptime(birth_date, '%m/%d/%Y')
+            birth_date_year = int((str(birth_date)).split("/")[2])
+            print(birth_date_year)
+            current_year = datetime.now().year
+            print(current_year)
             if current_year - birth_date_year < 10:
                 return (False, "Sorry , You have to be at least 10 Years old or above ")
         except:

@@ -1,5 +1,5 @@
+import json
 import pathlib
-from flask import Flask, session, abort, redirect, request
 from google.oauth2 import id_token
 from google_auth_oauthlib.flow import Flow
 from pip._vendor import cachecontrol
@@ -23,11 +23,34 @@ MY_SUPPORT_EMAIL = os.environ.get("MY_SUPPORT_EMAIL")
 MY_PHONE = os.environ.get("MY_PHONE")
 MY_COUNTRY = os.environ.get("MY_COUNTRY")
 MY_BIRTH_DATE = os.environ.get("MY_BIRTH_DATE")
+
+# Warehouse Demo
+MY_DEMO_BIRTH_DATE=os.environ.get("MY_DEMO_BIRTH_DATE")
+MY_DEMO_PHONE=os.environ.get("MY_DEMO_PHONE")
+MY_DEMO_EMAIL=os.environ.get("MY_DEMO_EMAIL")
+MY_DEMO_COUNTRY=os.environ.get("MY_DEMO_COUNTRY")
+MY_DEMO_API_KEY=os.environ.get("MY_DEMO_API_KEY")
+
 WAREHOUSE_BASE_URL = os.environ.get("WAREHOUSE_BASE_URL") # Todo after you upload the website make sure to update it
 MAIL_ME_ERROR_LINK = os.environ.get('MAIL_ME_ERROR_LINK') #For the user to email me mailto link
+
+
 COMPANY_END=os.environ.get('COMPANY_END')    # Only for Contributors
 
 
+client_secret_file=json.loads(os.environ.get("CLIENT_SECRET_JSON_FILE"))
+
+
+
+
+client_secrets_file_path = os.path.join(pathlib.Path(__file__).parent, "client_secret.json")
+
+
+def create_client_secret_file():
+        jsonString = json.dumps(client_secret_file)
+        jsonFile = open(client_secrets_file_path, "w")
+        jsonFile.write(jsonString)
+        jsonFile.close()
 
 # Excel or csv File uploads for inventory upload
 UPLOAD_FOLDER = './uploads'
@@ -36,10 +59,10 @@ ALLOWED_EXTENSIONS = {'csv','ods',"xlsx"}
 # Google sign up button setup
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 GOOGLE_CLIENT_ID = os.environ.get('CLIENT_ID')
-client_secrets_file = os.path.join(pathlib.Path(__file__).parent, "client_secret.json")
+
 
 flow = Flow.from_client_secrets_file(
-    client_secrets_file=client_secrets_file,
+    client_secrets_file=client_secrets_file_path,
     scopes=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email",
             "openid"],
     redirect_uri="http://127.0.0.1:5000/callback"
@@ -49,7 +72,11 @@ flow = Flow.from_client_secrets_file(
 def init_db(app):
     """Database tables configuration setup"""
     # Creates the logs tables if the db doesnt already exist
+    create_client_secret_file()
+
+
     with app.app_context():
+
         db.create_all()
         new_user = User(
             email=MY_SUPPORT_EMAIL.lower()
@@ -67,16 +94,17 @@ def init_db(app):
         )
 
         demo = User(  # TODO
-            email="demo@gmail.com",
-            name="Omar Sherif",
+
+            email=MY_DEMO_EMAIL,
+            name="Omar Sherif Demo",
             number_of_products=0,
-            api_key=generate_password_hash("+021008757777_demo", method='pbkdf2:sha256', salt_length=8),
+            api_key=generate_password_hash(MY_DEMO_API_KEY, method='pbkdf2:sha256', salt_length=8),
             gender="Male",
             status="User",
             service=None,
-            birth_date=MY_BIRTH_DATE,
-            phone=str("+021008757777"),
-            country=MY_COUNTRY.title(),
+            birth_date=MY_DEMO_BIRTH_DATE,
+            phone=MY_DEMO_PHONE,
+            country=MY_DEMO_COUNTRY,
             since_date = get_date()
 
         )

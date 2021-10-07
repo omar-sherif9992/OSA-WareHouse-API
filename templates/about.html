@@ -6,20 +6,20 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-208761542-1"></script>
     <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-208761542-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-
+        gtag('config', 'UA-208761542-1');
     </script>
 
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
-    <meta name='description'
-          content="An easy descriptive api , where user's can easily grab product's data that are scraped from popular ecommerce sites for demo projects not for commercial purposes">
+    <meta name='description' content="An easy descriptive api , where user's can easily grab product's data that are scraped from popular ecommerce sites for demo projects not for commercial purposes">
     <meta name='keywords' content='warehouse api python,shop api,shop api shopify,shop api free,shop api example,shop api sylius,shop api instagram,shop apitheke,shop apiculture,shop api meaning,amazon shop api,ark shop api,shop app api,api shop auto,shop in ansal api lucknow,amazon shop api documentation,amd shop api,api barber shop kulim,api body shop supplies,brainshop api,body shop api,api barber shop simpang ampat,coffee shop api,shop.com api,api shop closed exception,shop.com api key,api shop certification,shopify-shop-api-call-limit,ark api shop commands,ccv shop api,shop api data,ccv shop api docs,shop pom dapi,shop.com developer api,dns-shop api,django shop api,pet shop api example,rest api shop example,etsy shop api,ebay shop api,e-shop api,e2 shop api key,shop fake api,facebook shop api,fortnite shop api,api shop fabricated tanks,facebook shop api integration,fruit shop api,future shop api,google shop api,shop and go api and you,global shop api,gs shop api,gambio shop api,api gun shop,shopgold api,api shop to go,shop api in shopify,item shop api,api shop in india,shop api meaning instagram,etsy api shop id,shopify api shop id,api shop jawad s.a.r.l,prestashop api json,jtl shop api,juice shop api,juice shop api only xss,jimdo shop api,api shop landi,api shop login,line shop api,laravel shop api,le shop api,api shop lissone,api machine shop,api machine shop in uae,shopify shop metafields api,what does shop api mean,shop titans market api,bunga api shop malaysia,nuvem shop api,nvidia shop api,nike shop api,notebooksbilliger shop api,api shop online,pom dapi shop online,ocapi shop api,oxid eshop api,api online shop indonesia,daniela api shop online,shop app ui,shop app,shop apple,shop apple refurbished,shop apple watch,shop api plugin,shop apparel,shop apple australia ,
 ,api warehouse login
 ,amazon warehouse api
@@ -41,16 +41,14 @@ products api,shopping api,API,, best buy international, best buy countries,osa,O
     <meta http-equiv='refresh' content='600'>
     <meta name='theme-color' media='(prefers-color-scheme: light)' content='white'>
     <meta name='theme-color' media='(prefers-color-scheme: dark)' content='black'>
-    <link rel="manifest" crossorigin="use-credentials" href="manifest.json"/>
+    <link rel="manifest" crossorigin="use-credentials" href="manifest.json" />
 
     <!-- it refreshes the page by specified by content -->
     <!--        Warehouse Favicon-->
-    <link rel='icon' type='image/png' sizes='32x32'
-          href="{{url_for('static', filename='images/warehouse-favicon.png')}}">
+    <link rel='icon' type='image/png' sizes='32x32' href="{{url_for('static', filename='images/warehouse-favicon.png')}}">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 
     <!-- Bootstrap core CSS -->
@@ -64,100 +62,98 @@ products api,shopping api,API,, best buy international, best buy countries,osa,O
     <link rel="stylesheet" href="{{url_for('static', filename='css/owl.css')}}">
 
     <style>
-      #Capa_1{
-width:30%;
-height:30%;
-text-align:center !important;
-margin:0 auto;
-
-display:block-inline;
-}
-#face1{
-fill-opacity:0;
-stroke:url(#SVGID_1_);
-stroke-width:15px;
-stroke-dashoffset:0;
-stroke-dasharray:2000;
-animation: face 5s ease-in-out;
-}
-@keyframes face{
-0%{
-stroke-dashoffset:2000;}
-100%{
-stroke-dashoffset:0;
-}
-}
-  .footer-basic {
-  padding:40px 0;
-  color:#4b4c4d;
-  position:relative;
-  top:27%;
-}
-
-.footer-basic ul {
-  padding:0;
-  list-style:none;
-  text-align:center;
-  font-size:18px;
-  line-height:1.6;
-  margin-bottom:0;
-    text-align:center !important;
-
-}
-
-.footer-basic li {
-  padding:0 10px;
-  text-align:center !important;
-}
-
-.footer-basic ul a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
-}
-
-.footer-basic ul a:hover {
-  opacity:1;
-}
-
-.footer-basic .social {
-  text-align:center;
-  padding-bottom:25px;
-}
-
-.footer-basic .social > a {
-  font-size:24px;
-  width:40px;
-  height:40px;
-  line-height:40px;
-  display:inline-block;
-  text-align:center;
-  border-radius:50%;
-  border:1px solid #ccc;
-  margin:0 8px;
-  color:inherit;
-  opacity:0.75;
-}
-
-.footer-basic .social > a:hover {
-  opacity:0.9;
-}
-
-.footer-basic .copyright {
-  margin-top:15px;
-  text-align:center;
-  font-size:13px;
-  color:#aaa;
-  margin-bottom:0;
-}
-
-
-
+        #Capa_1 {
+            width: 30%;
+            height: 30%;
+            text-align: center !important;
+            margin: 0 auto;
+            display: block-inline;
+        }
+        
+        #face1 {
+            fill-opacity: 0;
+            stroke: url(#SVGID_1_);
+            stroke-width: 15px;
+            stroke-dashoffset: 0;
+            stroke-dasharray: 2000;
+            animation: face 5s ease-in-out;
+        }
+        
+        @keyframes face {
+            0% {
+                stroke-dashoffset: 2000;
+            }
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+        
+        .footer-basic {
+            padding: 40px 0;
+            color: #4b4c4d;
+            position: relative;
+            top: 27%;
+        }
+        
+        .footer-basic ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 0;
+            text-align: center !important;
+        }
+        
+        .footer-basic li {
+            padding: 0 10px;
+            text-align: center !important;
+        }
+        
+        .footer-basic ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+        
+        .footer-basic ul a:hover {
+            opacity: 1;
+        }
+        
+        .footer-basic .social {
+            text-align: center;
+            padding-bottom: 25px;
+        }
+        
+        .footer-basic .social>a {
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            margin: 0 8px;
+            color: inherit;
+            opacity: 0.75;
+        }
+        
+        .footer-basic .social>a:hover {
+            opacity: 0.9;
+        }
+        
+        .footer-basic .copyright {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 13px;
+            color: #aaa;
+            margin-bottom: 0;
+        }
     </style>
     <!--load all Font Awesome styles -->
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
 
     <title>OSA WareHouse API </title>
@@ -167,88 +163,85 @@ stroke-dashoffset:0;
 
 <body>
 
-<!-- ***** Preloader Start ***** -->
-<div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-        <span class="dot"></span>
-        <div class="dots">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-</div>
-<!-- ***** Preloader End ***** -->
-
-<!-- ***** Header Area Start ***** -->
-<header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-
-                        <h4>OSA <img src="{{url_for('static', filename='images/logo-icon.png')}}" alt="">
-                        </h4>
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                        <li class="scroll-to-section"><a href="#features">Features</a></li>
-                        <li class="scroll-to-section"><a href="#about">About Us</a></li>
-                        <li class="scroll-to-section"><a href="{{url_for('get_api_key')}}">Register</a></li>
-                        <!--                todo-->
-                        <li class="scroll-to-section"><a href="#contact">Documentation</a></li>
-                        <li class="scroll-to-section">
-                            <div class="main-blue-button"><a href="{{url_for('get_api_key')}}">Get Your API Key</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </div>
-</header>
-<!-- ***** Header Area End ***** -->
+    <!-- ***** Preloader End ***** -->
 
-<div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="row" style="color:white !important">
-                    <div class="col-lg-6 align-self-center">
-                        <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                            <div class="row">
-                                <div class="col-lg-4 col-sm-4">
-                                    <div class="info-stat">
-                                        <h6 style="color:white !important">API Status:</h6>
-                                        <h4 style="color:white !important">Ready Work</h4>
-                                    </div>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+
+                            <h4>OSA <img src="{{url_for('static', filename='images/logo-icon.png')}}" alt="">
+                            </h4>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#features">Features</a></li>
+                            <li class="scroll-to-section"><a href="#about">About Us</a></li>
+                            <li class="scroll-to-section"><a href="{{url_for('get_api_key')}}">Register</a></li>
+                            <li class="scroll-to-section"><a href="https://documenter.getpostman.com/view/17286684/UUy65PqF">Documentation</a></li>
+                            <li class="scroll-to-section">
+                                <div class="main-blue-button"><a href="{{url_for('get_api_key')}}">Get Your API Key</a>
                                 </div>
-                                <div class="col-lg-4 col-sm-4">
-                                    <div class="info-stat">
-                                        <h6 style="color:white !important">Price:</h6>
-                                        <h4 style="color:white !important">Free</h4>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row" style="color:white !important">
+                        <div class="col-lg-6 align-self-center">
+                            <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="info-stat">
+                                            <h6 style="color:white !important">API Status:</h6>
+                                            <h4 style="color:white !important">Ready Work</h4>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-4">
-                                    <div class="info-stat">
-                                        <h6 style="color:white !important">For:</h6>
-                                        <h4 style="color:white !important">Developers</h4>
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="info-stat">
+                                            <h6 style="color:white !important">Price:</h6>
+                                            <h4 style="color:white !important">Free</h4>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-12" style="color:white !important;">
-                                    <h2 style="color:white !important; background-color:white !important;"> WareHouse
-                                        API</h2>
-                                    <svg id="Capa_1" enable-background="new 0 0 512 512" height="512"
-                                         viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"
-                                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="info-stat">
+                                            <h6 style="color:white !important">For:</h6>
+                                            <h4 style="color:white !important">Developers</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12" style="color:white !important;">
+                                        <h2 style="color:white !important; background-color:white !important;"> WareHouse API
+                                        </h2>
+                                        <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="256" x2="256"
                                                         y1="512" y2="0">
                                             <stop offset="0" stop-color="#fd3a84"/>
@@ -265,215 +258,200 @@ stroke-dashoffset:0;
                                         </g>
                                     </svg>
 
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="main-green-button scroll-to-section">
-                                        <!--                      <a href="#contact">Get Your Quote</a>-->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="main-green-button scroll-to-section">
+                                            <!--                      <a href="#contact">Get Your Quote</a>-->
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <img src="{{url_for('static', filename='images/package_recieved.svg')}}" alt="">
+                        <div class="col-lg-6">
+                            <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <img src="{{url_for('static', filename='images/package_recieved.svg')}}" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div id="features" class="features section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="features-content">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s"
-                                 data-wow-delay="0s">
-                                <div class="first-number number">
-                                    <h6>01</h6>
+    <div id="features" class="features section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="features-content">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                                    <div class="first-number number">
+                                        <h6>01</h6>
+                                    </div>
+                                    <div class="icon"></div>
+                                    <h4>Reach Out</h4>
+                                    <div class="line-dec"></div>
+                                    <p>To Product data with wide varieties of categories and sub-categories from Popular up-to-date Ecommerce Sources.</p>
                                 </div>
-                                <div class="icon"></div>
-                                <h4>Reach Out</h4>
-                                <div class="line-dec"></div>
-                                <p>To Product data with wide varieties of categories and sub-categories from Popular
-                                    up-to-date Ecommerce Sources.</p>
                             </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="features-item second-feature wow fadeInUp" data-wow-duration="1s"
-                                 data-wow-delay="0.2s">
-                                <div class="second-number number">
-                                    <h6>02</h6>
+                            <div class="col-lg-3">
+                                <div class="features-item second-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                    <div class="second-number number">
+                                        <h6>02</h6>
+                                    </div>
+                                    <div class="icon"></div>
+                                    <h4>Data Format</h4>
+                                    <div class="line-dec"></div>
+                                    <p>Data is formatted in JSON Format according to standards.</p>
                                 </div>
-                                <div class="icon"></div>
-                                <h4>Data Format</h4>
-                                <div class="line-dec"></div>
-                                <p>Data is formatted in JSON Format according to standards.</p>
                             </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s"
-                                 data-wow-delay="0.4s">
-                                <div class="third-number number">
-                                    <h6>03</h6>
+                            <div class="col-lg-3">
+                                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                                    <div class="third-number number">
+                                        <h6>03</h6>
+                                    </div>
+                                    <div class="icon"></div>
+                                    <h4>Product Upload </h4>
+                                    <div class="line-dec"></div>
+                                    <p>The API Accepts only quality data that succeeds only with the API Data Validators to insure Real and High Quality Data</p>
                                 </div>
-                                <div class="icon"></div>
-                                <h4>Product Upload </h4>
-                                <div class="line-dec"></div>
-                                <p>The API Accepts only quality data that succeeds only with the API Data Validators to
-                                    insure Real and High Quality Data</p>
                             </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="features-item second-feature last-features-item wow fadeInUp"
-                                 data-wow-duration="1s" data-wow-delay="0.6s">
-                                <div class="fourth-number number">
-                                    <h6>04</h6>
+                            <div class="col-lg-3">
+                                <div class="features-item second-feature last-features-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                                    <div class="fourth-number number">
+                                        <h6>04</h6>
+                                    </div>
+                                    <div class="icon"></div>
+                                    <h4>Product Storage and Download into Excel file</h4>
+                                    <div class="line-dec"></div>
+                                    <p>User and Companies can store their Product Data into their Inventory and later on they can download it easily in a well formatted Excel File including all of their Products and their details</p>
                                 </div>
-                                <div class="icon"></div>
-                                <h4>Product Storage and Download into Excel file</h4>
-                                <div class="line-dec"></div>
-                                <p>User and Companies can store their Product Data into their Inventory and later on
-                                    they can download it easily in a well formatted Excel File including all of their
-                                    Products and their details</p>
                             </div>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="col-lg-3">
-                            <div class="features-item second-feature last-features-item wow fadeInUp"
-                                 data-wow-duration="1s" data-wow-delay="0.6s">
-                                <div class="first-number number">
-                                    <h6>05</h6>
+                            <br>
+                            <br>
+                            <div class="col-lg-3">
+                                <div class="features-item second-feature last-features-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                                    <div class="first-number number">
+                                        <h6>05</h6>
+                                    </div>
+                                    <div class="icon"></div>
+                                    <h4>Profile Storage and Download into Excel file</h4>
+                                    <div class="line-dec"></div>
+                                    <p>User and Companies can store their Profile Information Data and later on they can download it easily in a well formatted Excel File including all of their Products and their details</p>
                                 </div>
-                                <div class="icon"></div>
-                                <h4>Profile Storage and Download into Excel file</h4>
-                                <div class="line-dec"></div>
-                                <p>User and Companies can store their Profile Information Data  and later on
-                                    they can download it easily in a well formatted Excel File including all of their
-                                    Products and their details</p>
                             </div>
-                        </div>
 
-                         <div class="col-lg-3">
-                            <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s"
-                                 data-wow-delay="0.4s">
-                                <div class="second-number number">
-                                    <h6>06</h6>
+                            <div class="col-lg-3">
+                                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                                    <div class="second-number number">
+                                        <h6>06</h6>
+                                    </div>
+                                    <div class="icon"></div>
+                                    <h4>Search Products by Filters </h4>
+                                    <div class="line-dec"></div>
+                                    <p>The WareHouse API contains many filter options when searching for Products</p>
                                 </div>
-                                <div class="icon"></div>
-                                <h4>Search Products by Filters </h4>
-                                <div class="line-dec"></div>
-                                <p>The WareHouse API contains many filter options when  searching for Products</p>
                             </div>
-                        </div>
-                          <div class="col-lg-3">
-                            <div class="features-item second-feature wow fadeInUp" data-wow-duration="1s"
-                                 data-wow-delay="0.4s">
-                                <div class="third-number number">
-                                    <h6>07</h6>
+                            <div class="col-lg-3">
+                                <div class="features-item second-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                                    <div class="third-number number">
+                                        <h6>07</h6>
+                                    </div>
+                                    <div class="icon"></div>
+                                    <h4>Upload Inventory by Excel File </h4>
+                                    <div class="line-dec"></div>
+                                    <p>The WareHouse API is able to read Excel File but under certain conditions to upload all the User's Product faster and easier</p>
                                 </div>
-                                <div class="icon"></div>
-                                <h4>Upload Inventory by Excel File </h4>
-                                <div class="line-dec"></div>
-                                <p>The WareHouse API is able to read Excel File but under certain conditions to upload all the
-                                User's Product faster and easier</p>
                             </div>
-                        </div>
-                          <div class="col-lg-3">
-                            <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s"
-                                 data-wow-delay="0.4s">
-                                <div class="fourth-number number">
-                                    <h6>08</h6>
+                            <div class="col-lg-3">
+                                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                                    <div class="fourth-number number">
+                                        <h6>08</h6>
+                                    </div>
+                                    <div class="icon"></div>
+                                    <h4>User control their Product</h4>
+                                    <div class="line-dec"></div>
+                                    <p>User can control their product's in terms of Safety , changing Product's info or deleting a Product</p>
                                 </div>
-                                <div class="icon"></div>
-                                <h4>User control their Product</h4>
-                                <div class="line-dec"></div>
-                                <p>User can control their product's in terms of Safety , changing Product's info or deleting a Product</p>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="skills-content">
-                    <h2 style="text-align:center; margin-bottom:2rem;">Languages Used</h2>
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                                <div class="progress" data-percentage="80">
-                    <span class="progress-left">
+                <div class="col-lg-12">
+                    <div class="skills-content">
+                        <h2 style="text-align:center; margin-bottom:2rem;">Languages Used</h2>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                                    <div class="progress" data-percentage="80">
+                                        <span class="progress-left">
                       <span class="progress-bar"></span>
-                    </span>
-                                    <span class="progress-right">
+                                        </span>
+                                        <span class="progress-right">
                       <span class="progress-bar"></span>
-                    </span>
-                                    <div class="progress-value">
-                                        <div>
-                                            35%<br>
-                                            <span>HTML/CSS/JS</span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>
+                                                35%<br>
+                                                <span>HTML/CSS/JS</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                                <div class="progress" data-percentage="60">
-                    <span class="progress-left">
+                            <div class="col-lg-3">
+                                <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                                    <div class="progress" data-percentage="60">
+                                        <span class="progress-left">
                       <span class="progress-bar"></span>
-                    </span>
-                                    <span class="progress-right">
+                                        </span>
+                                        <span class="progress-right">
                       <span class="progress-bar"></span>
-                    </span>
-                                    <div class="progress-value">
-                                        <div>
-                                            45%<br>
-                                            <span>Python Flask Framework</span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>
+                                                45%<br>
+                                                <span>Python Flask Framework</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                                <div class="progress" data-percentage="90">
-                    <span class="progress-left">
+                            <div class="col-lg-3">
+                                <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                                    <div class="progress" data-percentage="90">
+                                        <span class="progress-left">
                       <span class="progress-bar"></span>
-                    </span>
-                                    <span class="progress-right">
+                                        </span>
+                                        <span class="progress-right">
                       <span class="progress-bar"></span>
-                    </span>
-                                    <div class="progress-value">
-                                        <div>
-                                            15%<br>
-                                            <span>Sqlalchemy</span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>
+                                                15%<br>
+                                                <span>Sqlalchemy</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="skill-item last-skill-item wow fadeIn" data-wow-duration="1s"
-                                 data-wow-delay="0.6s">
-                                <div class="progress" data-percentage="70">
-                    <span class="progress-left">
+                            <div class="col-lg-3">
+                                <div class="skill-item last-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                                    <div class="progress" data-percentage="70">
+                                        <span class="progress-left">
                       <span class="progress-bar"></span>
-                    </span>
-                                    <span class="progress-right">
+                                        </span>
+                                        <span class="progress-right">
                       <span class="progress-bar"></span>
-                    </span>
-                                    <div class="progress-value">
-                                        <div>
-                                            5%<br>
-                                            <span>Google Analytics</span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>
+                                                5%<br>
+                                                <span>Google Analytics</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -484,80 +462,76 @@ stroke-dashoffset:0;
             </div>
         </div>
     </div>
-</div>
 
-<div id="about" class="about-us section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="{{url_for('static', filename='images/about-left-image.png')}}" alt="">
+    <div id="about" class="about-us section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <img src="{{url_for('static', filename='images/about-left-image.png')}}" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="section-heading">
-                    <h6><strong>About Us</strong></h6>
-                    <h2>Top <em>Ecommerce </em> API & <a href="{{url_for('get_api_key')}}"> sign up now
+                <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="section-heading">
+                        <h6><strong>About Us</strong></h6>
+                        <h2>Top <em>Ecommerce </em> API & <a href="{{url_for('get_api_key')}}"> sign up now
                         <span>with us</span></a></h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-4">
-                        <div class="about-item">
-                            <h4>1500+</h4>
-                            <h6>Real Products</h6>
-                        </div>
                     </div>
-                    <div class="col-lg-4 col-sm-4">
-                        <div class="about-item">
-                            <h4>10+</h4>
-                            <h6>Top Ecommerce companies</h6>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="about-item">
+                                <h4>1500+</h4>
+                                <h6>Real Products</h6>
+                            </div>
                         </div>
-                    </div>
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="about-item">
+                                <h4>10+</h4>
+                                <h6>Top Ecommerce companies</h6>
+                            </div>
+                        </div>
 
+                    </div>
+                    <p><a rel="nofollow" href="{{url_for('get_api_key')}}" target="_parent">WareHouse API</a> is a free and easy descriptive api , where user's can easily grab product's data that are scraped from popular e-commerce sites and Users and Companies
+                        contributions for to aid you in prototyping or developing e-commerce type of websites projects not for commercial purposes.</p>
+                    <div class="main-green-button"><a href="https://documenter.getpostman.com/view/17286684/UUy65PqF">Documentation</a></div>
                 </div>
-                <p><a rel="nofollow" href="{{url_for('get_api_key')}}" target="_parent">WareHouse API</a> is a free and easy
-                    descriptive api , where user's can easily grab product's data that are scraped from popular
-                    e-commerce sites and Users and Companies contributions for to aid you in prototyping or developing e-commerce type of websites projects not for commercial purposes.</p>
-                <div class="main-green-button"><a href="#">Documentation</a></div>
             </div>
         </div>
     </div>
-</div>
 
 
-<div class="footer-basic">
-    <footer>
-        <div class="social">
-            <a href="https://www.youtube.com/channel/UCt0eXFStNA2oX5AqMjIBprw" data-placement="top" title="Youtube"><i class="fab fa-youtube"></i></a>
-            <a href="https://mega.nz/folder/FggAUAID#aF5qbxVjUfosGTxufJYxRQ" data-placement="top" title="CV"><i class="fas fa-portrait"></i></a>
-            <a href="https://github.com/omar-sherif9992" data-placement="top"
-                               title="Github"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/omar-sherif-2152021a3/" data-placement="top" title="Linkedin"><i
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="https://www.youtube.com/channel/UCt0eXFStNA2oX5AqMjIBprw" data-placement="top" title="Youtube"><i class="fab fa-youtube"></i></a>
+                <a href="https://mega.nz/folder/FggAUAID#aF5qbxVjUfosGTxufJYxRQ" data-placement="top" title="CV"><i class="fas fa-portrait"></i></a>
+                <a href="https://github.com/omar-sherif9992" data-placement="top" title="Github"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/omar-sherif-2152021a3/" data-placement="top" title="Linkedin"><i
                     class="fab fa-linkedin-in"></i></a>
-            <a href="mailto:osa.helpme@gmail.com?subject=Ask%20&body=Dear%20Omar%20Sherif%2C%0AI%20want%20to%20know%20more%20about%20the%20WareHouse%20API"
-               data-placement="top" title="Email Me"><i class="fas fa-at"></i></a>
-        </div>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Services</a></li>
-            <li class="list-inline-item"><a href="#">About</a></li>
-            <li class="list-inline-item"><a href="#" data-placement="top" title="Documentation">Documentation</a></li>
-            <li class="list-inline-item"><a href="{{url_for('Privacy_Policy')}}">Privacy Policy</a></li>
-        </ul>
-                <p class="copyright">Made with <i class="fas fa-heart" style="color:red"></i> by Omar Sherif ALi - OSA</p>
+                <a href="mailto:osa.helpme@gmail.com?subject=Ask%20&body=Dear%20Omar%20Sherif%2C%0AI%20want%20to%20know%20more%20about%20the%20WareHouse%20API" data-placement="top" title="Email Me"><i class="fas fa-at"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#top">About</a></li>
+                <li class="list-inline-item"><a href="https://documenter.getpostman.com/view/17286684/UUy65PqF" data-placement="top" title="Documentation">Documentation</a></li>
+                <li class="list-inline-item"><a href="{{url_for('Privacy_Policy')}}">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Made with <i class="fas fa-heart" style="color:red"></i> by Omar Sherif ALi - OSA</p>
 
-        <p class="copyright">OSA © 2021</p>
-    </footer>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+            <p class="copyright">OSA © 2021</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
-<!-- Scripts -->
-<script src="{{url_for('static', filename='jquery/jquery.min.js')}}"></script>
-<script src="{{url_for('static', filename='js/bootstrap.bundle.min..js')}}"></script>
-<script src="{{url_for('static', filename='js/owl-carousel.js')}}"></script>
-<script src="{url_for('static', filename='js/animation.js')}}"></script>
-<script src="{{url_for('static', filename='js/imagesloaded.js')}}"></script>
-<script src="{{url_for('static', filename='js/custom.js')}}"></script>
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='jquery/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.bundle.min..js')}}"></script>
+    <script src="{{url_for('static', filename='js/owl-carousel.js')}}"></script>
+    <script src="{url_for('static', filename='js/animation.js')}}"></script>
+    <script src="{{url_for('static', filename='js/imagesloaded.js')}}"></script>
+    <script src="{{url_for('static', filename='js/custom.js')}}"></script>
 
 </body>
+
 </html>

@@ -1,8 +1,7 @@
-import datetime
 
 from flask_wtf import FlaskForm, RecaptchaField
-from wtforms import StringField, SubmitField, SelectField, RadioField, DateField
-from wtforms.validators import DataRequired, Length, Email, ValidationError, URL
+from wtforms import StringField, SubmitField, SelectField, RadioField
+from wtforms.validators import DataRequired, Length, Email, ValidationError
 from my_data_validators import *
 from select_fields_data import *
 from models import User
