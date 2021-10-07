@@ -95,7 +95,7 @@ class ForgotForm(FlaskForm):
                         render_kw={"placeholder": "Phone Number ex: +209996752223"})
     submit = SubmitField(label="Find api_key")
 
-    # recaptcha = RecaptchaField()  # todo enable recaptcha after uploading to disable bots
+    recaptcha = RecaptchaField()  # todo enable recaptcha after uploading to disable bots
     def validate_email(self, email):
         """Email Validator for forgot form"""
         check_email(email.data)
@@ -117,7 +117,7 @@ class RegisterForm(FlaskForm):
     company_url = StringField(label="", render_kw={"placeholder": "Company Page Link"})
     birth_date = StringField(label="", render_kw={"placeholder": "Birth Date mm/dd/yyyy"})
 
-    # recaptcha = RecaptchaField()  # todo enable recaptcha after uploading to disable bots
+    recaptcha = RecaptchaField()  # todo enable recaptcha after uploading to disable bots
     submit = SubmitField(label="Register")
 
     def validate_birth_date(self, birth_date):
