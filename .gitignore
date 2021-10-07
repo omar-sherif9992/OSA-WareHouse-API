@@ -170,5 +170,4 @@ instance/*
 # Cython debug symbols
 cython_debug/
 
-client_secret.json
 .idea

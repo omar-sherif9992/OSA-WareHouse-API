@@ -62,7 +62,7 @@ ALLOWED_EXTENSIONS = {'csv','ods',"xlsx"}
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 GOOGLE_CLIENT_ID = os.environ.get('CLIENT_ID')
 
-
+create_client_secret_file()
 flow = Flow.from_client_secrets_file(
     client_secrets_file=client_secrets_file_path,
     scopes=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email",
