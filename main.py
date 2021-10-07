@@ -1362,10 +1362,3 @@ def about():
 
 if __name__ == '__main__':
     app.run(debug=False)
-    # demo api_key "+021008757777_demo"
-
-# http://127.0.0.1:5000/upload?api_key=+021008757777_demo
-# http://127.0.0.1:5000/download/inventory?api_key=+021008757777_demo
-# http://127.0.0.1:5000/download/profile?api_key=+021008757777_demo
-
-# favicon: https://www.flaticon.com/free-icon/warehouse_4985849?term=warehouse&page=1&position=20&page=1&position=20&related_id=4985849&origin=search
