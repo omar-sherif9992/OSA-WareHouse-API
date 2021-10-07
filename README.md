@@ -25,20 +25,6 @@
 
 <br>
 
-[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/stargazers/)
-[![GitHub forks](https://badgen.net/github/forks/Naereen/Strapdown.js/)](https://GitHub.com/Naereen/StrapDown.js/network/)
-[![GitHub watchers](https://badgen.net/github/watchers/Naereen/Strapdown.js/)](https://GitHub.com/Naereen/StrapDown.js/watchers/)
-<br>
-[![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest)
-[![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
-
-
-<!-- [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 
 <h1 align="center">Welcome to OSA-WareHouse-API</h1>
@@ -74,7 +60,6 @@ As someone who is willing to practice creating e-commerce websites, It is a stru
 Users who will Use this Data should only use it for Practice and <strong>not for Commercial Purposes !</strong>
 
 
-<a href="https://www.getpostman.com/"><img src="https://assets.getpostman.com/common-share/postman-logo-horizontal-320x132.png" /></a><br />
 
 
 <h3> User Features </h3>
@@ -127,12 +112,56 @@ Users who will Use this Data should only use it for Practice and <strong>not for
 <li>rating : represents the Product's rating <strong>Required</strong></li>
 <li>release_date : represents when did the Product is Uploaded to the API   <strong>Required</strong></li>
 <li>product_id : represents the Product's id which is hashed unique for every product for the owner can share to user who doesnt own it so he can view and edit it. <strong>Required</strong></li>
+<li>secure : hashes  the product_id  for a product and it will be sent via email with it qr-code for the owner can share to user who doesn't own it so he can view and edit it. <strong>Not-Required </strong>
+default = false</li>	
 </ul>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<h3>JSON</h3>
+<h3>JSON Data Format Example :</h3>
+
+```{
+    "response": {
+        "data": {
+            "number_of_products": 1,
+            "products": [
+                {
+                    "product_1": {
+                        "owner": {
+                            "country": "Egypt",
+                            "email": "demo@gmail.com",
+                            "gender": "Male",
+                            "name": "Nour",
+                            "number_of_products": 1,
+                            "phone": "+021008757777",
+                            "since": "October 7,2021",
+                            "status": "User"
+                        },
+                        "product": {
+                            "available": true,
+                            "brand": "Polo",
+                            "category": "Clothes",
+                            "currency": "EGP",
+                            "delivery": true,
+                            "img_url": "https://m.media-amazon.com/images/I/610zGpHMF0L._AC_SY550_.jpg",
+                            "price": 46,
+                            "product_description": "100% Cotton",
+                            "product_name": "Us. Polo Assn. Cotton Contrast-Logo Ribbed Trims Round-Neck Sweatshirt For Boys",
+                            "product_url": "https://www.amazon.eg/-/en/US-Polo-Assn-Contrast-Logo-Round-Neck/dp/B08WJNLZF6/ref=lp_18018165031_1_11?th=1",
+                            "rating": "4.2 out of 5",
+                            "release_date": "October 7,2021",
+                            "source_name": "Amazon"
+                        }
+                    }
+                }
+            ]
+        },
+        "success_message": "Products Found"
+    },
+    "status": "success"
+}
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -155,10 +184,21 @@ Users who will Use this Data should only use it for Practice and <strong>not for
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+## Postman
+<p>UseD Postman to help me to test my program and write the <a href="">Documentation</a></p>
+<a href="https://www.getpostman.com/"><img src="https://assets.getpostman.com/common-share/postman-logo-horizontal-320x132.png" /></a><br />
+
+
+
 # FrameWork
 * [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework))
 
 ## Libraries Used
+* Selenium : for website flow testing
+* BeatufilSoup : for Scraping the Product's data
+* qrcode : for creating a unique Qrcode for User's Inventory
+* Pandas & Csv : for creating and manipulating Excel files uploaded and downloaded by the user.
+* urlshortners: for creating short urls
 
 
 
