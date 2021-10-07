@@ -116,23 +116,3 @@ def init_db(app):
             db.session.rollback()
 
 
-# APP Configuration
-def create_app():
-    """App confiquration setup """
-    app = Flask(__name__)
-    app.config["SECRET_KEY"] = APP_SECRET_KEY
-    app.config["RECAPTCHA_PUBLIC_KEY"] = RECAPTCHA_PUBLIC_KEY
-    app.config["RECAPTCHA_PRIVATE_KEY"] = RECAPTCHA_PRIVATE_KEY
-    Bootstrap(app)
-    app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-    ##Connect to Database
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///Warehouse.db'
-    # app.config['SQLALCHEMY_COMMIT_TEARDOWN'] = True
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    # app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
-
-    db.app = app
-    db.init_app(app)
-    init_db(app)
-    ADMIN_USER = User.query.filter_by(id=1).first()
-    return (ADMIN_USER, app)
