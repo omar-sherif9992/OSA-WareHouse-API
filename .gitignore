@@ -171,3 +171,4 @@ instance/*
 cython_debug/
 
 client_secret.json
+.idea
