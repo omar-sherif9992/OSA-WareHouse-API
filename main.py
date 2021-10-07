@@ -2,7 +2,7 @@ import csv
 import pyshorteners
 import sqlalchemy
 from flask import url_for, flash, send_from_directory
-from werkzeug.utils import secure_filename
+from werkzeug.utils import secure_filename, redirect
 from Notification import email_manager
 from forms import RegisterForm, GoogleForm, ForgotForm
 from config import *
