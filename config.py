@@ -74,9 +74,6 @@ flow = Flow.from_client_secrets_file(
 def init_db(app):
     """Database tables configuration setup"""
     # Creates the logs tables if the db doesnt already exist
-    create_client_secret_file()
-
-
     with app.app_context():
 
         db.create_all()
