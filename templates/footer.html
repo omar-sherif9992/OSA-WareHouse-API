@@ -1,0 +1,42 @@
+<div class="footer-basic">
+    <footer>
+        <div class="social">
+
+            <a href="https://www.youtube.com/channel/UCt0eXFStNA2oX5AqMjIBprw" data-placement="top" title="Youtube"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://mega.nz/folder/FggAUAID#aF5qbxVjUfosGTxufJYxRQ" data-placement="top" title="CV"><i
+                    class="fas fa-portrait"></i></a>
+            <a href="https://github.com/omar-sherif9992" data-placement="top" title="Github"><i
+                    class="icon ion-social-github"></i></a><a href="https://www.linkedin.com/in/omar-sherif-2152021a3/"
+                                                              data-placement="top" title="Linkedin"><i
+                class="icon ion-social-linkedin"></i></a>
+
+            <a href="mailto:osa.helpme@gmail.com?subject=Ask%20&body=Dear%20Omar%20Sherif%2C%0AI%20want%20to%20know%20more%20about%20the%20WareHouse%20API"
+               data-placement="top" title="Email Me"><i class="fas fa-at"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" data-placement="top" title="Documentation">Documentation</a></li>
+            <li class="list-inline-item"><a href="{{url_for('about')}}" data-placement="top" title="About">About</a>
+            </li>
+
+            {% if policy=='policy': %}
+            <li class="list-inline-item"><a href="{{url_for('get_api_key')}}" data-placement="top" title="Home">Home</a>
+            </li>
+
+            {% else : %}
+            <li class="list-inline-item"><a href="{{url_for('Privacy_Policy')}}" data-placement="top"
+                                            title="Privacy & Policy">Privacy & Policy</a></li>
+            {% endif %}
+        </ul>
+        <p class="copyright">Made with <i class="fas fa-heart" style="color:red"></i> by Omar Sherif ALi - OSA</p>
+
+        <p class="copyright" data-placement="top" title="Copyright OSA © 2021">Copyright OSA © 2021</p>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<!--It’s a collection of superfast tests – or “detects” as we like to call them – which run as your web page loads, then you can use the results to tailor the experience to the user.-->
+<script src='js/vendor/modernizr-3.11.2.min.js'></script>
+
+</body>
+
+</html>

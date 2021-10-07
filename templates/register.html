@@ -1,0 +1,81 @@
+{%include "header.html" %} {% import "bootstrap/wtf.html" as wtf %}
+
+
+
+<body>
+   <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section" style="color:white;font-size:4.5rem;font-weight:bold;">WareHouse <span id="face2"> API</span>
+                    </h2>
+                    <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="512" y2="0"><stop offset="0" stop-color="#fd3a84"/><stop offset="1" stop-color="#ffa68d"/></linearGradient><g><g><g><path id="face1" d="m502.248 90.948-241-90c-3.384-1.264-7.111-1.264-10.495 0l-241 90c-5.865 2.19-9.753 7.792-9.753 14.052v392c0 8.284 6.716 15 15 15h61c8.284 0 15-6.716 15-15v-227h330v227c0 8.284 6.716 15 15 15h61c8.284 0 15-6.716 15-15v-392c0-6.26-3.888-11.862-9.752-14.052zm-81.248 149.052h-330v-30h330zm61 242h-31v-287c0-8.284-6.716-15-15-15h-360c-8.284 0-15 6.716-15 15v287h-31v-366.59l226-84.398 226 84.398zm-271-347c0 8.284 6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15h-60c-8.284 0-15 6.716-15 15zm165 257h-60v-75.001c0-8.284-6.716-15-15-15h-90c-8.284 0-15 6.716-15 15v75.001h-60c-8.284 0-15 6.716-15 15v90c0 8.284 6.716 15 15 15h90c8.284 0 15-6.716 15-15v-75.001h30v75.001c0 8.284 6.716 15 15 15h90c8.284 0 15-6.716 15-15v-90c0-8.284-6.716-15-15-15zm-165 90h-60v-60h60zm75-90.001h-60v-60h60zm75 90.001h-60v-60h60zm-15-332h60c8.284 0 15-6.716 15-15s-6.716-15-15-15h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15zm-180-30h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z" fill="url(#SVGID_1_)"/></g></g></g></svg>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-lg-5">
+                    <div class="login-wrap p-4 p-md-5">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <i class="far fa-user" style="color:white;"></i></div>
+                        {% if forgot==True: %}
+                        <h3 class="text-center mb-4">Forgot API Key</h3>
+
+                        {% else:%}
+                        <h3 class="text-center mb-4">Sign Up</h3>
+
+
+                        {% endif %}
+
+                        <div id="loading" style="text-align:center !important;"></div>
+                        <div id="content">
+                            <ul class="errors" style=" list-style-type: none;">
+                                {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+                                <li style="color:red !important;">💡{{ message }}</li>
+
+                                {% endfor %} {% endif %} {% endwith %}
+                            </ul>
+
+                            {% if condition=='no_google': %} {% else %}
+                            <a href="{{url_for('google_register')}}" data-placement="top" title="Sign up with Google Account">
+                                <div class='g-sign-in-button'>
+                                    <div class='content-wrapper'>
+                                        <div class='logo-wrapper'>
+                                            <img src='https://developers.google.com/identity/images/g-logo.png'>
+                                        </div>
+                                        <span class='text-container'>
+      <span>Sign up with Google</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <br>
+                            <div style="text-align:center !important; margin:0 0 !important;">
+                                <hr style="display:inline-block; width:20.3%; text-align:center !important;">
+                                <div style="display:inline-block; width:30.3%; text-align:center !important; height:10px; position:relative; top:-0.61rem;">or</div>
+                                <hr style="display:inline-block; width:20.3%; text-align:center !important;"> </div>
+                            {% endif %} {{ wtf.quick_form(form,novalidate=True,button_map={'submit':'primary'}) }} {% if forgot==True: %} {% else %}
+                            <a href="{{url_for('forgot_api_key')}}" style="color:#0645AD;  float: right;
+  text-align: right;">Forgot api_key ?</a> {% endif %}
+
+                        </div>
+                    </div>
+                    <div class="form-group d-md-flex">
+                        <div class="w-50">
+                        </div>
+
+
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="{{url_for('static',filename='/js/status.js')}}"> </script>
+
+
+
+
+
+
+    {%include 'footer.html' %}

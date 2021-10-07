@@ -1,0 +1,17 @@
+{
+  "name": "OSA WareHouse API",
+  "short_name":"WareHouseAPI" ,
+  "start_url": "/",
+  "display": "standalone",
+  "background_color":"#FFE1c4",
+  "orientation": "portrait-primary",
+    "description": "Ecommerce Product's information",
+  "theme_color": "#FFE1C4",
+    "icons": [{
+      "src": "../static/images/warehouse-favicon.png",
+      "type": "/image/png",
+      "sizes": "32x32"
+
+    }]
+
+}
