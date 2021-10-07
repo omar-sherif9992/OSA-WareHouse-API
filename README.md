@@ -62,6 +62,8 @@
     <a href="mailto:osa.helpme@gmail.com?subject=UnExpected%20Error%20Occured&body=Sorry%20for%20the%20inconvenience%2C%20Please%20describe%20Your%20situation%20and%20emphasis%20the%20Endpoint%20!%0A">Report Bug</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+	      ·
+    <a href="mailto:osa.helpme@gmail.com?subject=I%20want%20to%20be%20a%20Contributor%20to%20OSA-WareHouse-API&body=Dear%20Omar%20Sherif%2C%0A%0A%3D%3D%3E%20name%0A%3D%3D%3E%20email%0A%3D%3D%3E%20phone%20number%0A%3D%3D%3E%20github%20link%0A%0A%0A%0ANeeded%20Skills%3A%0A%0A1-Familiar%20with%20Python%0A2-Familiar%20with%20BeautifulSoup%0A3-Familiar%20with%20csv%0A4-Familiar%20with%20pandas%20%0A%0AI%20acquire%20all%20those%20needed%20Skills.%0A%0Aregards">Be a Contributer</a>
   </p>
 </div>
 
@@ -159,7 +161,7 @@ Users who will Use this Data should only use it for Practice and <strong>not for
 
 
 ## Author: <i>Omar Sherif Ali - OSA</i>
-
+<div align="center">
 <h2> Connect with me <img src='https://raw.githubusercontent.com/ShahriarShafin/ShahriarShafin/main/Assets/handshake.gif' width="100px"> </h2>
 <a href="https://github.com/omar-sherif9992">
 	<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
@@ -174,6 +176,12 @@ Users who will Use this Data should only use it for Practice and <strong>not for
 <a href="https://www.youtube.com/channel/UCt0eXFStNA2oX5AqMjIBprw">
 	<img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
 </a>
+</div>
+<br>
+<div align="center">
+<a href="https://www.youtube.com/channel/UCt0eXFStNA2oX5AqMjIBprw">
+	<img src="https://github-readme-streak-stats.herokuapp.com/?user=omar-sherif9992"></a>	
+
 
 
 <p  align="center">Made with ❤️ by Omar Sherif Ali - OSA.</p>
