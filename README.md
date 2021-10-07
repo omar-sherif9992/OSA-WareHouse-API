@@ -127,12 +127,56 @@ Users who will Use this Data should only use it for Practice and <strong>not for
 <li>rating : represents the Product's rating <strong>Required</strong></li>
 <li>release_date : represents when did the Product is Uploaded to the API   <strong>Required</strong></li>
 <li>product_id : represents the Product's id which is hashed unique for every product for the owner can share to user who doesnt own it so he can view and edit it. <strong>Required</strong></li>
+<li>secure : hashes  the product_id  for a product and it will be sent via email with it qr-code for the owner can share to user who doesn't own it so he can view and edit it. <strong>Not-Required </strong>
+default = false</li>	
 </ul>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<h3>JSON</h3>
+<h3>JSON Data Format Example :</h3>
+
+```{
+    "response": {
+        "data": {
+            "number_of_products": 1,
+            "products": [
+                {
+                    "product_1": {
+                        "owner": {
+                            "country": "Egypt",
+                            "email": "demo@gmail.com",
+                            "gender": "Male",
+                            "name": "Nour",
+                            "number_of_products": 1,
+                            "phone": "+021008757777",
+                            "since": "October 7,2021",
+                            "status": "User"
+                        },
+                        "product": {
+                            "available": true,
+                            "brand": "Polo",
+                            "category": "Clothes",
+                            "currency": "EGP",
+                            "delivery": true,
+                            "img_url": "https://m.media-amazon.com/images/I/610zGpHMF0L._AC_SY550_.jpg",
+                            "price": 46,
+                            "product_description": "100% Cotton",
+                            "product_name": "Us. Polo Assn. Cotton Contrast-Logo Ribbed Trims Round-Neck Sweatshirt For Boys",
+                            "product_url": "https://www.amazon.eg/-/en/US-Polo-Assn-Contrast-Logo-Round-Neck/dp/B08WJNLZF6/ref=lp_18018165031_1_11?th=1",
+                            "rating": "4.2 out of 5",
+                            "release_date": "October 7,2021",
+                            "source_name": "Amazon"
+                        }
+                    }
+                }
+            ]
+        },
+        "success_message": "Products Found"
+    },
+    "status": "success"
+}
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
