@@ -1361,7 +1361,7 @@ def about():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
     # demo api_key "+021008757777_demo"
 
 # http://127.0.0.1:5000/upload?api_key=+021008757777_demo
