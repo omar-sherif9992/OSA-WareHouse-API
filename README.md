@@ -25,20 +25,6 @@
 
 <br>
 
-[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/stargazers/)
-[![GitHub forks](https://badgen.net/github/forks/Naereen/Strapdown.js/)](https://GitHub.com/Naereen/StrapDown.js/network/)
-[![GitHub watchers](https://badgen.net/github/watchers/Naereen/Strapdown.js/)](https://GitHub.com/Naereen/StrapDown.js/watchers/)
-<br>
-[![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest)
-[![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
-
-
-<!-- [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 
 <h1 align="center">Welcome to OSA-WareHouse-API</h1>
@@ -74,7 +60,6 @@ As someone who is willing to practice creating e-commerce websites, It is a stru
 Users who will Use this Data should only use it for Practice and <strong>not for Commercial Purposes !</strong>
 
 
-<a href="https://www.getpostman.com/"><img src="https://assets.getpostman.com/common-share/postman-logo-horizontal-320x132.png" /></a><br />
 
 
 <h3> User Features </h3>
@@ -199,10 +184,21 @@ default = false</li>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+## Postman
+<p>UseD Postman to help me to test my program and write the <a href="">Documentation</a></p>
+<a href="https://www.getpostman.com/"><img src="https://assets.getpostman.com/common-share/postman-logo-horizontal-320x132.png" /></a><br />
+
+
+
 # FrameWork
 * [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework))
 
 ## Libraries Used
+* Selenium : for website flow testing
+* BeatufilSoup : for Scraping the Product's data
+* qrcode : for creating a unique Qrcode for User's Inventory
+* Pandas & Csv : for creating and manipulating Excel files uploaded and downloaded by the user.
+* urlshortners: for creating short urls
 
 
 
