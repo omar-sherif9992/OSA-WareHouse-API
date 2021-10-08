@@ -114,5 +114,6 @@ def init_db(app):
             db.session.commit()
         except exc.IntegrityError as e:
             db.session.rollback()
-
+        except:
+            pass
 

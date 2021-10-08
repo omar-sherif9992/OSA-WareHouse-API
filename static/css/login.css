@@ -2305,7 +2305,7 @@ textarea.form-control {
 
 #submit {
     width: 20rem !important;
-    margin-top: 2rem !important;
+    margin-top: 4rem !important;
     margin-bottom: 2rem !important;
     border-radius: 0.25rem !important;
     form-control();

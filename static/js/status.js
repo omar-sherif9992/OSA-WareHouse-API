@@ -54,8 +54,6 @@ checkStatus();
             helpBlocks[i].setAttribute('style', 'color:red;');
         }
         document.getElementById('submit').setAttribute('onclick', 'loading()');
-                document.getElementById('submit').setAttribute('style', 'margin-top:20.8rem');
-
 
         document.getElementsByClassName('form')[0].setAttribute('style', ' style="text-align:center !important;');
         document.getElementById('status-0').setAttribute('style', 'display:block !important;margin-left:1rem;margin-right:1rem;margin-top:0.5rem;margin-bottom:0;padding:0px 0px ');
