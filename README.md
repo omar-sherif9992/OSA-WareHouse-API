@@ -45,6 +45,8 @@
     <br />
     <a href="https://osa-warehouse-api.herokuapp.com/">View The WareHouse API</a>
     ·
+	     <a href="https://osa-warehouse-api.herokuapp.com/register">Get Your api_key</a>
+    ·
     <a href="mailto:osa.helpme@gmail.com?subject=UnExpected%20Error%20Occured&body=Sorry%20for%20the%20inconvenience%2C%20Please%20describe%20Your%20situation%20and%20emphasis%20the%20Endpoint%20!%0A">Report Bug</a>
    	      ·
     <a href="mailto:osa.helpme@gmail.com?subject=I%20want%20to%20be%20a%20Contributor%20to%20OSA-WareHouse-API&body=Dear%20Omar%20Sherif%2C%0A%0A%3D%3D%3E%20name%0A%3D%3D%3E%20email%0A%3D%3D%3E%20phone%20number%0A%3D%3D%3E%20github%20link%0A%0A%0A%0ANeeded%20Skills%3A%0A%0A1-Familiar%20with%20Python%0A2-Familiar%20with%20BeautifulSoup%0A3-Familiar%20with%20csv%0A4-Familiar%20with%20pandas%20%0A%0AI%20acquire%20all%20those%20needed%20Skills.%0A%0Aregards">Be a Contributer</a>
@@ -60,7 +62,25 @@ As someone who is willing to practice creating e-commerce websites, It is a stru
 Users who will Use this Data should only use it for Practice and <strong>not for Commercial Purposes !</strong>
 
 
-
+<a href="https://osa-warehouse-api.herokuapp.com/"><h2>WareHouse API Features </h2></a>
+<ul>
+<li><strong>Reach Out</strong> To Product data with wide varieties of categories and sub-categories from Popular up-to-date Ecommerce Sources</li>
+<li><strong>Data Format
+</strong>Data is formatted in JSON Format according to standards.</li>
+<li><strong>Product Upload</strong>The API Accepts only quality data that succeeds only with the API Data Validators to insure Real and High Quality Data</li>
+<li><strong>Product Storage and Download into Excel file
+</strong>User and Companies can store their Product Data into their Inventory and later on they can download it easily in a well formatted Excel File including all of their Products and their details</li>
+<li><strong>Profile Storage and Download into Excel file
+</strong>User and Companies can store their Profile Information Data and later on they can download it easily in a well formatted Excel File including all of their Products and their details</li>
+<li><strong>Search Products by Filters
+</strong>The WareHouse API contains many filter options when searching for Products</li>
+<li><strong>Upload Inventory by Excel File
+</strong>The WareHouse API is able to read Excel File but under certain conditions to upload all the User's Product faster and easier</li>
+<li><strong>User control their Product
+</strong>User can control their product's in terms of Safety , changing Product's info or deleting a Product</li>
+</ul>	
+	
+	
 
 <h3> User Features </h3>
 <hr>
@@ -169,7 +189,7 @@ default = false</li>
 
 ## 💻️ Languages & Concepts Used
 
-* Python [(Java Swing)](https://en.wikipedia.org/wiki/Python_(programming_language))
+* Python [(programming)](https://en.wikipedia.org/wiki/Python_(programming_language))
 * [Object-oriented programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming#:~:text=Object%2Doriented%20programming%20(OOP),(often%20known%20as%20methods)) (Encapsulation, Abstraction, Inheritance, and Polymorphism)
 * [Exception Handling](https://en.wikipedia.org/wiki/Exception_handling)
 * [Flask](https://flask.palletsprojects.com/en/2.0.x/)
@@ -185,7 +205,7 @@ default = false</li>
 
 
 ## Postman
-<p>UseD Postman to help me to test my program and write the <a href="">Documentation</a></p>
+<p>Used Postman to help me to test my program and write the <a href="https://documenter.getpostman.com/view/17286684/UUy65PqF">Documentation</a></p>
 <a href="https://www.getpostman.com/"><img src="https://assets.getpostman.com/common-share/postman-logo-horizontal-320x132.png" /></a><br />
 
 
