@@ -20,7 +20,6 @@ def create_app():
     Bootstrap(app)
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
     ##Connect to Database
-
     app.config['SQLALCHEMY_DATABASE_URI'] =DATABASE_URL
     # app.config['SQLALCHEMY_COMMIT_TEARDOWN'] = True
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
