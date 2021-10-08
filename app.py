@@ -10,6 +10,8 @@ from itsdangerous import URLSafeTimedSerializer
 from product_qrcode import generate_qrcode
 from user_download.inventory_download import Inventory
 from user_download.profile_download import Profile
+
+
 # APP Configuration
 def create_app():
     """App confiquration setup """
@@ -20,7 +22,7 @@ def create_app():
     Bootstrap(app)
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
     ##Connect to Database
-    app.config['SQLALCHEMY_DATABASE_URI'] =DATABASE_URL
+    app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
     # app.config['SQLALCHEMY_COMMIT_TEARDOWN'] = True
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     # app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
@@ -30,6 +32,7 @@ def create_app():
     init_db(app)
     ADMIN_USER = User.query.filter_by(id=1).first()
     return (ADMIN_USER, app)
+
 
 ADMIN_USER, app = create_app()
 
@@ -41,8 +44,6 @@ ADMIN_USER, app = create_app()
 #                 "openid"],
 #         redirect_uri=redirect(url_for('callback'))
 #     )
-
-
 
 
 # Mail-System
@@ -104,7 +105,7 @@ def get_user(api_key: str, admin: str):
         raise ValidationError("💡You are not the Admin")
     elif is_admin(admin):
         return ADMIN_USER
-    if api_key==None or api_key=="":
+    if api_key == None or api_key == "":
         raise ValidationError("💡Api Key is needed for access")
 
     if " " == api_key[0] and "+" != api_key[0]:
@@ -707,6 +708,7 @@ def search_product_by_name_descending_filter():
     except:
         abort(500)
 
+
 @app.route("/search/ascending/name", methods=['GET'])
 def search_product_by_name_ascending_filter():
     """Show product by its name alphabetical descending in the Warehouse from the A to Z """
@@ -738,7 +740,6 @@ def search_product_by_name_ascending_filter():
         abort(500)
 
 
-
 @app.route("/search/decrease/price", methods=['GET'])
 def search_product_by_price_decreasing_filter():
     """Show product by its price decreasing in the Warehouse from the Expensive to the Cheap """
@@ -768,9 +769,6 @@ def search_product_by_price_decreasing_filter():
         return jsonify(response={"fail_message": f"{error_message}"}, status="fail")
     except:
         abort(500)
-
-
-
 
 
 @app.route("/search/increase/price", methods=['GET'])
@@ -871,7 +869,8 @@ def update_price():
     """it changes the price of a product it needs the id which is actually the product_id or product_name if the user owns the product or the admin have control and the name of the product to change the price  """
     try:
 
-        new_price = missing_param(param=request.args.get("new_price"), param_name="new_price")  # http://127.0.0.1:5000/update_price?new_price=9
+        new_price = missing_param(param=request.args.get("new_price"),
+                                  param_name="new_price")  # http://127.0.0.1:5000/update_price?new_price=9
         new_price = check_price(new_price)
         product_id = request.args.get("product_id")
         product_name = request.args.get("product_name")
@@ -885,12 +884,16 @@ def update_price():
         products = Products.query.all()
         product_update = None
         for product in products:
-            if (product_name != None and user == ADMIN_USER and (product_name).lower() == (product.product_name).lower()):
+            if (product_name != None and user == ADMIN_USER and (product_name).lower() == (
+            product.product_name).lower()):
                 product_update = product
                 break
 
                 # if the product is originally secured by the user he can find his or her product_id send it by email with qrcode
-            if product_id != None and ((check_available(product.secure) == True and check_password_hash(product.product_id,product_id)) or (check_available(product.secure) == False and (product.product_id).lower() == (product_id).lower())) or ((product_name).lower() == (product.product_name).lower() and product in user.products):
+            if product_id != None and ((check_available(product.secure) == True and check_password_hash(
+                    product.product_id, product_id)) or (check_available(product.secure) == False and (
+            product.product_id).lower() == (product_id).lower())) or (
+                    (product_name).lower() == (product.product_name).lower() and product in user.products):
                 product_update = product
                 break
         if product_update == None:
@@ -1126,7 +1129,7 @@ def forgot_api_key():
 
             token = serializer.dumps(email, salt='change-api-key')
             link = url_for('found_api_key', token=token, id=user.id, _external=True)
-            shorted_link = shortner.tinyurl.short(link)  #  shortened the link because it was lengthy
+            shorted_link = shortner.tinyurl.short(link)  # shortened the link because it was lengthy
             message = f"Please open this link to get a new API Key:\n {shorted_link} "
             Mail.send_email(subject="Warehouse API Key",
                             html_file_path='./Notification/Email-Verification-Gmail-template.html',
@@ -1351,11 +1354,13 @@ def upload_file():
     except:
         abort(500)
 
+
 @app.route('/documentation')
 @app.route('/docs')
 def documentation():
     """The WareHouse API Documentation"""
     return redirect("https://documenter.getpostman.com/view/17286684/UUy65PqF")
+
 
 @app.route('/Privacy&Policy')
 def Privacy_Policy():
