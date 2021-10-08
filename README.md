@@ -27,11 +27,11 @@
 
 
 
-<h1 align="center">Welcome to OSA-WareHouse-API</h1>
+<a href="https://osa-warehouse-api.herokuapp.com/register"><h1 align="center">Welcome to OSA-WareHouse-API</h1></a>
 
 
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://osa-warehouse-api.herokuapp.com/">
     <img src="./SVGs/warehouse-icon.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -43,17 +43,17 @@
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View The WareHouse API</a>
+    <a href="https://osa-warehouse-api.herokuapp.com/">View The WareHouse API</a>
     ·
     <a href="mailto:osa.helpme@gmail.com?subject=UnExpected%20Error%20Occured&body=Sorry%20for%20the%20inconvenience%2C%20Please%20describe%20Your%20situation%20and%20emphasis%20the%20Endpoint%20!%0A">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-	      ·
+   	      ·
     <a href="mailto:osa.helpme@gmail.com?subject=I%20want%20to%20be%20a%20Contributor%20to%20OSA-WareHouse-API&body=Dear%20Omar%20Sherif%2C%0A%0A%3D%3D%3E%20name%0A%3D%3D%3E%20email%0A%3D%3D%3E%20phone%20number%0A%3D%3D%3E%20github%20link%0A%0A%0A%0ANeeded%20Skills%3A%0A%0A1-Familiar%20with%20Python%0A2-Familiar%20with%20BeautifulSoup%0A3-Familiar%20with%20csv%0A4-Familiar%20with%20pandas%20%0A%0AI%20acquire%20all%20those%20needed%20Skills.%0A%0Aregards">Be a Contributer</a>
   </p>
 </div>
 
-## 💡 Description
+<a href="https://osa-warehouse-api.herokuapp.com/register">WareHouse API</a>
+
+	## 💡 Description
 As someone who is willing to practice creating e-commerce websites, It is a struggle to find some Real and High Quality Data as a placeholder while on development stage. So this API's job is to help Developer's to reach out to this data that can help them and make it easier .
 
 ## ⚠️ Disclaimer  
@@ -200,9 +200,6 @@ default = false</li>
 * Pandas & Csv : for creating and manipulating Excel files uploaded and downloaded by the user.
 * urlshortners: for creating short urls
 
-
-
-## Video Demo
 
 
 
