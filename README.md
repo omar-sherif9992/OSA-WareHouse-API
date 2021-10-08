@@ -40,7 +40,7 @@
   <p align="center">
     An E-commerce API to aid Developers for their E-commerce practice projects!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://documenter.getpostman.com/view/17286684/UUy65PqF"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://osa-warehouse-api.herokuapp.com/">View The WareHouse API</a>
@@ -53,7 +53,7 @@
 
 <a href="https://osa-warehouse-api.herokuapp.com/register">WareHouse API</a>
 
-	## 💡 Description
+## 💡 Description
 As someone who is willing to practice creating e-commerce websites, It is a struggle to find some Real and High Quality Data as a placeholder while on development stage. So this API's job is to help Developer's to reach out to this data that can help them and make it easier .
 
 ## ⚠️ Disclaimer  
