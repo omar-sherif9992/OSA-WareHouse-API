@@ -33,6 +33,19 @@ def create_app():
     return (ADMIN_USER, app)
 
 ADMIN_USER, app = create_app()
+
+# with app.app_context():
+#
+#     flow = Flow.from_client_secrets_file(
+#         client_secrets_file=client_secrets_file_path,
+#         scopes=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email",
+#                 "openid"],
+#         redirect_uri=redirect(url_for('callback'))
+#     )
+
+
+
+
 # Mail-System
 Mail = email_manager.EmailManager()
 # Serializer for forget api key
