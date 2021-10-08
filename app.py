@@ -21,7 +21,7 @@ def create_app():
     Bootstrap(app)
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
     ##Connect to Database
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL",'sqlite:///Warehouse.db')
     # app.config['SQLALCHEMY_COMMIT_TEARDOWN'] = True
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     # app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
