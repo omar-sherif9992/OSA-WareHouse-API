@@ -10,7 +10,6 @@ from itsdangerous import URLSafeTimedSerializer
 from product_qrcode import generate_qrcode
 from user_download.inventory_download import Inventory
 from user_download.profile_download import Profile
-
 # APP Configuration
 def create_app():
     """App confiquration setup """
@@ -21,7 +20,9 @@ def create_app():
     Bootstrap(app)
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
     ##Connect to Database
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL",'sqlite:///Warehouse.db')
+    print(DATABASE_URL)
+    try:
+    app.config['SQLALCHEMY_DATABASE_URI'] =DATABASE_URL
     # app.config['SQLALCHEMY_COMMIT_TEARDOWN'] = True
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     # app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True

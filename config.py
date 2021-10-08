@@ -18,6 +18,8 @@ from itsdangerous import URLSafeTimedSerializer, SignatureExpired, BadTimeSignat
 # Loading My Keys
 load_dotenv()
 APP_SECRET_KEY = os.environ.get("SECRET_KEY")
+DATABASE_URL= os.environ.get("DATABASE_URL")
+
 WAREHOUSE_USER_API_KEY = os.environ.get('WAREHOUSE_USER')
 RECAPTCHA_PRIVATE_KEY = os.environ.get("RECAPTCHA_PRIVATE_KEY")
 RECAPTCHA_PUBLIC_KEY = os.environ.get("RECAPTCHA_PUBLIC_KEY")
