@@ -10,6 +10,9 @@ from itsdangerous import URLSafeTimedSerializer
 from product_qrcode import generate_qrcode
 from user_download.inventory_download import Inventory
 from user_download.profile_download import Profile
+# cors
+#from flask_cors import CORS
+
 
 
 # APP Configuration
@@ -26,6 +29,11 @@ def create_app():
     # app.config['SQLALCHEMY_COMMIT_TEARDOWN'] = True
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     # app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
+    #cors
+    #CORS(app)
+    #cors = CORS(app, resources={r"/*": {"origins": "*"}})
+
+
 
     db.app = app
     db.init_app(app)
